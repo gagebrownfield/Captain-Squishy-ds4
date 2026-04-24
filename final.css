@@ -17,8 +17,7 @@
     transition: none !important;
 }
 
-/* Hide everything except sticks and face buttons */
-.ds4 .face,
+/* Hide everything except sticks, face buttons, and D-pad */
 .ds4 .bumper,
 .ds4 .trigger,
 .ds4 .back,
