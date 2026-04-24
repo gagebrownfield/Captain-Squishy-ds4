@@ -32,21 +32,21 @@
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: 55px !important;
-    height: 55px !important;
-    background: rgba(180, 0, 255, 0.75) !important;
-    box-shadow: 0 0 18px rgba(180, 0, 255, 1) !important;
+    width: 65px !important;
+    height: 65px !important;
+    background: rgba(112, 7, 173, 0.75) !important;
+    box-shadow: 0 0 18px rgba(112, 7, 173, 1) !important;
     border-radius: 50% !important;
     z-index: 9999 !important;
 }
 
 /* Stick alignment */
 .ds4 .stick.left {
-    transform: translate(47px, -10px) !important;
+    transform: translate(37px, -8px) !important;
 }
 
 .ds4 .stick.right {
-    transform: translate(-7px, -10px) !important;
+    transform: translate(-2px, -5px) !important;
 }
 
 /* Face button reaction */
@@ -69,22 +69,22 @@
 /* Individual face button alignment */
 /* triangle = top */
 .ds4 .button.y {
-    transform: translate(-49px, 18px) !important;
+    transform: translate(-44px, 13px) !important;
 }
 
 /* square = left */
 .ds4 .button.x {
-    transform: translate(-34px, 3px) !important;
+    transform: translate(-31px, 0px) !important;
 }
 
 /* X = bottom */
 .ds4 .button.a {
-    transform: translate(-50px, -30px) !important;
+    transform: translate(-44px, -30px) !important;
 }
 
 /* circle = right */
 .ds4 .button.b {
-    transform: translate(-80px, 3px) !important;
+    transform: translate(-75px, 0px) !important;
 }
 
 /* D-pad reaction */
@@ -92,7 +92,7 @@
     display: block !important;
     visibility: visible !important;
     opacity: 0 !important;
-    width: 26px !important;
+    width: 36px !important;
     height: 18px !important;
     background: rgba(255, 255, 255, 0.92) !important;
     box-shadow: 0 0 12px rgba(255, 255, 255, 1) !important;
