@@ -1,4 +1,4 @@
-/* Captain Squishy DS4 Overlay - Debug Reaction Test */
+/* Captain Squishy DS4 Overlay - Stick Alignment Test */
 
 .controller.ds4.white {
     background-image: url(controller.png.png) !important;
@@ -7,7 +7,7 @@
     background-position: center center !important;
 }
 
-/* Remove default red artwork, but keep the elements alive */
+/* Remove default artwork from everything */
 .controller.ds4.white * {
     background-image: none !important;
     border: none !important;
@@ -15,9 +15,10 @@
     filter: none !important;
     animation: none !important;
     transition: none !important;
+    box-shadow: none !important;
 }
 
-/* Keep normal parts invisible */
+/* Hide everything except sticks */
 .ds4 .button,
 .ds4 .face,
 .ds4 .bumper,
@@ -26,41 +27,29 @@
 .ds4 .start,
 .ds4 .touchpad,
 .ds4 .meta {
-    background: transparent !important;
-    box-shadow: none !important;
+    display: none !important;
 }
 
-/* FORCE pressed buttons to show */
-.ds4 .button.pressed,
-.ds4 .face.pressed,
-.ds4 .bumper.pressed,
-.ds4 .trigger.pressed,
-.ds4 .back.pressed,
-.ds4 .start.pressed,
-.ds4 .touchpad.pressed,
-.ds4 .meta.pressed {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    width: 45px !important;
-    height: 45px !important;
-    background: rgba(180, 0, 255, 0.9) !important;
-    box-shadow: 0 0 20px rgba(180, 0, 255, 1) !important;
-    border-radius: 50% !important;
-    z-index: 9999 !important;
-}
-
-/* FORCE sticks to show */
+/* Show both sticks clearly */
 .ds4 .stick {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
     width: 55px !important;
     height: 55px !important;
-    background: rgba(180, 0, 255, 0.75) !important;
+    background: rgba(180, 0, 255, 0.8) !important;
     box-shadow: 0 0 18px rgba(180, 0, 255, 1) !important;
     border-radius: 50% !important;
     z-index: 9999 !important;
+}
+
+/* Nudge stick positions if needed */
+.ds4 .stick.left {
+    transform: translate(0px, 0px) !important;
+}
+
+.ds4 .stick.right {
+    transform: translate(0px, 0px) !important;
 }
 
 /* Performance safe */
