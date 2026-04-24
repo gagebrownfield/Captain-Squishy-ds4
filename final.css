@@ -1,4 +1,4 @@
-/* Captain Squishy DS4 Overlay - Working Reaction Test */
+/* Captain Squishy DS4 Overlay - Debug Reaction Test */
 
 .controller.ds4.white {
     background-image: url(controller.png.png) !important;
@@ -7,40 +7,63 @@
     background-position: center center !important;
 }
 
-/* Keep GamepadViewer elements alive, but remove the ugly default red art */
+/* Remove default red artwork, but keep the elements alive */
 .controller.ds4.white * {
     background-image: none !important;
-    background-color: transparent !important;
     border: none !important;
-    box-shadow: none !important;
     text-shadow: none !important;
     filter: none !important;
     animation: none !important;
     transition: none !important;
 }
 
-/* Pressed face buttons / d-pad / menu buttons glow purple */
-.ds4.white .button.pressed,
-.ds4.white .face.pressed,
-.ds4.white .bumper.pressed,
-.ds4.white .trigger.pressed,
-.ds4.white .back.pressed,
-.ds4.white .start.pressed,
-.ds4.white .touchpad.pressed,
-.ds4.white .meta.pressed {
-    background-color: rgba(180, 0, 255, 0.65) !important;
-    box-shadow: 0 0 12px rgba(180, 0, 255, 0.95) !important;
-    border-radius: 50% !important;
+/* Keep normal parts invisible */
+.ds4 .button,
+.ds4 .face,
+.ds4 .bumper,
+.ds4 .trigger,
+.ds4 .back,
+.ds4 .start,
+.ds4 .touchpad,
+.ds4 .meta {
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
-/* Make sticks show as small purple circles so movement is visible */
-.ds4.white .stick {
-    background-color: rgba(180, 0, 255, 0.45) !important;
-    box-shadow: 0 0 10px rgba(180, 0, 255, 0.8) !important;
+/* FORCE pressed buttons to show */
+.ds4 .button.pressed,
+.ds4 .face.pressed,
+.ds4 .bumper.pressed,
+.ds4 .trigger.pressed,
+.ds4 .back.pressed,
+.ds4 .start.pressed,
+.ds4 .touchpad.pressed,
+.ds4 .meta.pressed {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 45px !important;
+    height: 45px !important;
+    background: rgba(180, 0, 255, 0.9) !important;
+    box-shadow: 0 0 20px rgba(180, 0, 255, 1) !important;
     border-radius: 50% !important;
+    z-index: 9999 !important;
 }
 
-/* Keep performance safe */
+/* FORCE sticks to show */
+.ds4 .stick {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 55px !important;
+    height: 55px !important;
+    background: rgba(180, 0, 255, 0.75) !important;
+    box-shadow: 0 0 18px rgba(180, 0, 255, 1) !important;
+    border-radius: 50% !important;
+    z-index: 9999 !important;
+}
+
+/* Performance safe */
 * {
     transition: none !important;
     animation: none !important;
