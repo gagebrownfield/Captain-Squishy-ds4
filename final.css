@@ -1,4 +1,4 @@
-/* Captain Squishy DS4 Overlay - Reaction Test */
+/* Captain Squishy DS4 Overlay - Working Reaction Test */
 
 .controller.ds4.white {
     background-image: url(controller.png.png) !important;
@@ -7,21 +7,19 @@
     background-position: center center !important;
 }
 
-/* Hide default art but DO NOT fully remove the elements */
+/* Keep GamepadViewer elements alive, but remove the ugly default red art */
 .controller.ds4.white * {
     background-image: none !important;
-    background: transparent !important;
+    background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
     filter: none !important;
     animation: none !important;
     transition: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
 }
 
-/* Show pressed buttons as a purple glow */
+/* Pressed face buttons / d-pad / menu buttons glow purple */
 .ds4.white .button.pressed,
 .ds4.white .face.pressed,
 .ds4.white .bumper.pressed,
@@ -30,10 +28,15 @@
 .ds4.white .start.pressed,
 .ds4.white .touchpad.pressed,
 .ds4.white .meta.pressed {
-    opacity: 1 !important;
-    visibility: visible !important;
-    background: rgba(180, 0, 255, 0.65) !important;
-    box-shadow: 0 0 12px rgba(180, 0, 255, 0.9) !important;
+    background-color: rgba(180, 0, 255, 0.65) !important;
+    box-shadow: 0 0 12px rgba(180, 0, 255, 0.95) !important;
+    border-radius: 50% !important;
+}
+
+/* Make sticks show as small purple circles so movement is visible */
+.ds4.white .stick {
+    background-color: rgba(180, 0, 255, 0.45) !important;
+    box-shadow: 0 0 10px rgba(180, 0, 255, 0.8) !important;
     border-radius: 50% !important;
 }
 
