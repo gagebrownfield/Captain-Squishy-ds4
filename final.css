@@ -7,16 +7,24 @@
     background-position: center center;
 }
 
-/* Hide default GamepadViewer red overlay parts for now */
+/* Hide default GamepadViewer overlay parts */
 .ds4.white .stick,
+.ds4.white .sticks,
 .ds4.white .button,
+.ds4.white .buttons,
 .ds4.white .face,
+.ds4.white .faces,
 .ds4.white .trigger,
+.ds4.white .triggers,
 .ds4.white .bumper,
+.ds4.white .bumpers,
 .ds4.white .back,
 .ds4.white .start,
-.ds4.white .touchpad {
-    opacity: 0;
+.ds4.white .touchpad,
+.ds4.white .meta {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 /* TikTok Studio performance-safe settings */
