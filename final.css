@@ -65,7 +65,7 @@
 
 /* Stick alignment */
 .ds4 .stick.left {
-    transform: translate(49px, -14px) !important;
+    transform: translate(49px, -16px) !important;
 }
 
 .ds4 .stick.right {
