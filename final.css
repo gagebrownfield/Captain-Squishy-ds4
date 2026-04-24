@@ -1,10 +1,21 @@
-/* Captain Squishy DS4 Overlay - Starter Test */
+/* Captain Squishy DS4 Overlay - Static Base Test */
 
 .controller.ds4.white {
-    background-image: url(controller.png.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+    background-image: url(controller.png.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center center !important;
+}
+
+/* Hide EVERY default GamepadViewer moving piece inside the controller */
+.controller.ds4.white * {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    background: none !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* TikTok Studio performance-safe settings */
@@ -14,39 +25,4 @@
     filter: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
-}
-
-/* Force-hide all default moving GamepadViewer pieces, including pressed states */
-.ds4.white .button,
-.ds4.white .button.pressed,
-.ds4.white .face,
-.ds4.white .face.pressed,
-.ds4.white .stick,
-.ds4.white .stick.pressed,
-.ds4.white .stick.left,
-.ds4.white .stick.right,
-.ds4.white .trigger,
-.ds4.white .trigger.pressed,
-.ds4.white .bumper,
-.ds4.white .bumper.pressed,
-.ds4.white .back,
-.ds4.white .back.pressed,
-.ds4.white .start,
-.ds4.white .start.pressed,
-.ds4.white .touchpad,
-.ds4.white .touchpad.pressed,
-.ds4.white .meta,
-.ds4.white .meta.pressed,
-.ds4.white .arrows,
-.ds4.white .abxy,
-.ds4.white .sticks,
-.ds4.white .triggers,
-.ds4.white .bumpers {
-    background-image: none !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    display: none !important;
 }
