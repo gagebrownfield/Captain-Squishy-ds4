@@ -1,5 +1,7 @@
 /* Captain Squishy DS4 Overlay - Current Working Base */
 
+/* Captain Squishy DS4 Overlay - Sticks + Face Buttons */
+
 .controller.ds4.white {
     background-image: url(controller.png) !important;
     background-repeat: no-repeat !important;
@@ -17,8 +19,7 @@
     transition: none !important;
 }
 
-/* Keep normal button parts invisible until pressed */
-.ds4 .button,
+/* Hide everything except sticks and face buttons */
 .ds4 .face,
 .ds4 .bumper,
 .ds4 .trigger,
@@ -26,31 +27,10 @@
 .ds4 .start,
 .ds4 .touchpad,
 .ds4 .meta {
-    background: transparent !important;
-    box-shadow: none !important;
+    display: none !important;
 }
 
-/* Debug pressed-button reactions */
-.ds4 .button.pressed,
-.ds4 .face.pressed,
-.ds4 .bumper.pressed,
-.ds4 .trigger.pressed,
-.ds4 .back.pressed,
-.ds4 .start.pressed,
-.ds4 .touchpad.pressed,
-.ds4 .meta.pressed {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    width: 45px !important;
-    height: 45px !important;
-    background: rgba(180, 0, 255, 0.9) !important;
-    box-shadow: 0 0 20px rgba(180, 0, 255, 1) !important;
-    border-radius: 50% !important;
-    z-index: 9999 !important;
-}
-
-/* Debug stick movement */
+/* Stick movement */
 .ds4 .stick {
     display: block !important;
     visibility: visible !important;
@@ -65,11 +45,28 @@
 
 /* Stick alignment */
 .ds4 .stick.left {
-    transform: translate(47px, -12px) !important;
+    transform: translate(42px, -6px) !important;
 }
 
 .ds4 .stick.right {
-    transform: translate(-10px, -8px) !important;
+    transform: translate(-2px, -4px) !important;
+}
+
+/* Face button reaction test */
+.ds4 .button {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+    background: rgba(180, 0, 255, 0.75) !important;
+    box-shadow: 0 0 14px rgba(180, 0, 255, 1) !important;
+    border-radius: 50% !important;
+    z-index: 9999 !important;
+}
+
+.ds4 .button.pressed {
+    opacity: 1 !important;
 }
 
 /* TikTok Studio performance-safe settings */
@@ -77,4 +74,5 @@
     transition: none !important;
     animation: none !important;
     filter: none !important;
+}
 }
