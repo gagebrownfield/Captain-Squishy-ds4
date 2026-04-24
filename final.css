@@ -69,7 +69,7 @@
 /* Individual face button alignment */
 /* triangle = top */
 .ds4 .button.y {
-    transform: translate(-49px, 19px) !important;
+    transform: translate(-49px, 18px) !important;
 }
 
 /* square = left */
@@ -84,7 +84,7 @@
 
 /* circle = right */
 .ds4 .button.b {
-    transform: translate(-81px, 3px) !important;
+    transform: translate(-80px, 3px) !important;
 }
 
 /* D-pad reaction */
