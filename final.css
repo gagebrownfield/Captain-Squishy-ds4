@@ -1,4 +1,4 @@
-/* Captain Squishy DS4 Overlay - Sticks + White Face Button Glow */
+/* Captain Squishy DS4 Overlay - Sticks + Face Buttons + D-pad */
 
 .controller.ds4.white {
     background-image: url(controller.png) !important;
@@ -85,6 +85,44 @@
 /* circle = right */
 .ds4 .button.b {
     transform: translate(-81px, 3px) !important;
+}
+
+/* D-pad reaction */
+.ds4 .face {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 0 14px rgba(255, 255, 255, 1) !important;
+    border-radius: 10px !important;
+    z-index: 9999 !important;
+}
+
+.ds4 .face.pressed {
+    opacity: 1 !important;
+}
+
+/* D-pad alignment */
+/* up */
+.ds4 .face.up {
+    transform: translate(0px, 0px) !important;
+}
+
+/* down */
+.ds4 .face.down {
+    transform: translate(0px, 0px) !important;
+}
+
+/* left */
+.ds4 .face.left {
+    transform: translate(0px, 0px) !important;
+}
+
+/* right */
+.ds4 .face.right {
+    transform: translate(0px, 0px) !important;
 }
 
 /* TikTok Studio performance-safe settings */
