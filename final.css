@@ -47,7 +47,7 @@
 }
 
 .ds4 .stick.right {
-    transform: translate(-6px, -10px) !important;
+    transform: translate(-7px, -10px) !important;
 }
 
 /* Face button reaction */
@@ -70,22 +70,22 @@
 /* Individual face button alignment */
 /* triangle = top */
 .ds4 .button.y {
-    transform: translate(-52px, 19px) !important;
+    transform: translate(-50px, 19px) !important;
 }
 
 /* square = left */
 .ds4 .button.x {
-    transform: translate(-40px, 5px) !important;
+    transform: translate(-36px, 3px) !important;
 }
 
 /* X = bottom */
 .ds4 .button.a {
-    transform: translate(-55px, -28px) !important;
+    transform: translate(-51px, -30px) !important;
 }
 
 /* circle = right */
 .ds4 .button.b {
-    transform: translate(-80px, 6px) !important;
+    transform: translate(-80px, 4px) !important;
 }
 
 /* TikTok Studio performance-safe settings */
