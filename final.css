@@ -63,6 +63,7 @@
     box-shadow: 0 0 14px rgba(180, 0, 255, 1) !important;
     border-radius: 50% !important;
     z-index: 9999 !important;
+    transform: translate(-70px, 0px) !important;
 }
 
 .ds4 .button.pressed {
