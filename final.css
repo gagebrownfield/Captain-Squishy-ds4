@@ -65,11 +65,11 @@
 
 /* Stick alignment */
 .ds4 .stick.left {
-    transform: translate(42px, -8px) !important;
+    transform: translate(43px, -8px) !important;
 }
 
 .ds4 .stick.right {
-    transform: translate(-2px, -4px) !important;
+    transform: translate(-5px, -8px) !important;
 }
 
 /* TikTok Studio performance-safe settings */
