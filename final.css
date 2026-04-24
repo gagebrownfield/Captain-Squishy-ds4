@@ -1,4 +1,4 @@
-/* Captain Squishy DS4 Overlay - Stick Alignment Test */
+/* Captain Squishy DS4 Overlay - Current Working Base */
 
 .controller.ds4.white {
     background-image: url(controller.png) !important;
@@ -7,7 +7,7 @@
     background-position: center center !important;
 }
 
-/* Remove default artwork from everything */
+/* Remove default GamepadViewer artwork, but keep elements working */
 .controller.ds4.white * {
     background-image: none !important;
     border: none !important;
@@ -15,10 +15,9 @@
     filter: none !important;
     animation: none !important;
     transition: none !important;
-    box-shadow: none !important;
 }
 
-/* Hide everything except sticks */
+/* Keep normal button parts invisible until pressed */
 .ds4 .button,
 .ds4 .face,
 .ds4 .bumper,
@@ -27,23 +26,44 @@
 .ds4 .start,
 .ds4 .touchpad,
 .ds4 .meta {
-    display: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
-/* Show both sticks clearly */
+/* Debug pressed-button reactions */
+.ds4 .button.pressed,
+.ds4 .face.pressed,
+.ds4 .bumper.pressed,
+.ds4 .trigger.pressed,
+.ds4 .back.pressed,
+.ds4 .start.pressed,
+.ds4 .touchpad.pressed,
+.ds4 .meta.pressed {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 45px !important;
+    height: 45px !important;
+    background: rgba(180, 0, 255, 0.9) !important;
+    box-shadow: 0 0 20px rgba(180, 0, 255, 1) !important;
+    border-radius: 50% !important;
+    z-index: 9999 !important;
+}
+
+/* Debug stick movement */
 .ds4 .stick {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
     width: 55px !important;
     height: 55px !important;
-    background: rgba(180, 0, 255, 0.8) !important;
+    background: rgba(180, 0, 255, 0.75) !important;
     box-shadow: 0 0 18px rgba(180, 0, 255, 1) !important;
     border-radius: 50% !important;
     z-index: 9999 !important;
 }
 
-/* Nudge stick positions if needed */
+/* Stick alignment */
 .ds4 .stick.left {
     transform: translate(42px, -6px) !important;
 }
@@ -52,7 +72,7 @@
     transform: translate(-2px, -4px) !important;
 }
 
-/* Performance safe */
+/* TikTok Studio performance-safe settings */
 * {
     transition: none !important;
     animation: none !important;
