@@ -1,6 +1,4 @@
-/* Captain Squishy DS4 Overlay - Current Working Base */
-
-/* Captain Squishy DS4 Overlay - Sticks + Face Buttons */
+/* Captain Squishy DS4 Overlay - Sticks + White Face Button Glow */
 
 .controller.ds4.white {
     background-image: url(controller.png) !important;
@@ -45,11 +43,11 @@
 
 /* Stick alignment */
 .ds4 .stick.left {
-    transform: translate(45px, -8px) !important;
+    transform: translate(42px, -6px) !important;
 }
 
 .ds4 .stick.right {
-    transform: translate(-4px, -8px) !important;
+    transform: translate(-2px, -4px) !important;
 }
 
 /* Face button reaction */
@@ -72,22 +70,22 @@
 /* Individual face button alignment */
 /* triangle = top */
 .ds4 .button.y {
-    transform: translate(-88px, 0px) !important;
+    transform: translate(-72px, 18px) !important;
 }
 
 /* square = left */
 .ds4 .button.x {
-    transform: translate(-88px, 0px) !important;
+    transform: translate(-72px, 18px) !important;
 }
 
 /* X = bottom */
 .ds4 .button.a {
-    transform: translate(-88px, 0px) !important;
+    transform: translate(-72px, 18px) !important;
 }
 
 /* circle = right */
 .ds4 .button.b {
-    transform: translate(-108px, 0px) !important;
+    transform: translate(-92px, 18px) !important;
 }
 
 /* TikTok Studio performance-safe settings */
@@ -95,5 +93,4 @@
     transition: none !important;
     animation: none !important;
     filter: none !important;
-}
 }
