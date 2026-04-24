@@ -7,6 +7,18 @@
     background-position: center center;
 }
 
+/* Hide default GamepadViewer red overlay parts for now */
+.ds4.white .stick,
+.ds4.white .button,
+.ds4.white .face,
+.ds4.white .trigger,
+.ds4.white .bumper,
+.ds4.white .back,
+.ds4.white .start,
+.ds4.white .touchpad {
+    opacity: 0;
+}
+
 /* TikTok Studio performance-safe settings */
 * {
     transition: none !important;
