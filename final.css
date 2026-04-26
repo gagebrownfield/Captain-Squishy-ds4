@@ -42,11 +42,11 @@
 
 /* Stick alignment */
 .ds4 .stick.left {
-    transform: translate(27px, -10px) !important;
+    transform: translate(30px, -10px) !important;
 }
 
 .ds4 .stick.right {
-    transform: translate(-12px, -10px) !important;
+    transform: translate(-9px, -10px) !important;
 }
 
 /* Face button reaction */
@@ -69,22 +69,22 @@
 /* Individual face button alignment */
 /* triangle = top */
 .ds4 .button.y {
-    transform: translate(-40px, 11px) !important;
+    transform: translate(-38px, 9px) !important;
 }
 
 /* square = left */
 .ds4 .button.x {
-    transform: translate(-27px, -2px) !important;
+    transform: translate(-25px, -3px) !important;
 }
 
 /* X = bottom */
 .ds4 .button.a {
-    transform: translate(-41px, -31px) !important;
+    transform: translate(-39px, -31px) !important;
 }
 
 /* circle = right */
 .ds4 .button.b {
-    transform: translate(-70px, -2px) !important;
+    transform: translate(-66px, -3px) !important;
 }
 
 /* D-pad reaction */
@@ -92,8 +92,8 @@
     display: block !important;
     visibility: visible !important;
     opacity: 0 !important;
-    width: 36px !important;
-    height: 36px !important;
+    width: 34px !important;
+    height: 34px !important;
     background: rgba(255, 255, 255, 0.92) !important;
     box-shadow: 0 0 12px rgba(255, 255, 255, 1) !important;
     border-radius: 6px !important;
@@ -127,9 +127,9 @@
     left: 50% !important;
     transform: translateX(-50%) !important;
     bottom: 100% !important;
-    border-left: 8px solid transparent !important;
-    border-right: 8px solid transparent !important;
-    border-bottom: 36px solid rgba(255, 255, 255, 0.92) !important;
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid rgba(255, 255, 255, 0.92) !important;
 }
 
 /* left = rectangle with triangle facing RIGHT */
@@ -137,9 +137,9 @@
     top: 50% !important;
     transform: translateY(-50%) !important;
     left: 100% !important;
-    border-top: 8px solid transparent !important;
-    border-bottom: 8px solid transparent !important;
-    border-left: 36px solid rgba(255, 255, 255, 0.92) !important;
+    border-top: 15px solid transparent !important;
+    border-bottom: 15px solid transparent !important;
+    border-left: 15px solid rgba(255, 255, 255, 0.92) !important;
 }
 
 /* right = rectangle with triangle facing LEFT */
@@ -147,26 +147,26 @@
     top: 50% !important;
     transform: translateY(-50%) !important;
     right: 100% !important;
-    border-top: 8px solid transparent !important;
-    border-bottom: 8px solid transparent !important;
-    border-right: 36px solid rgba(255, 255, 255, 0.92) !important;
+    border-top: 15px solid transparent !important;
+    border-bottom: 15px solid transparent !important;
+    border-right: 15px solid rgba(255, 255, 255, 0.92) !important;
 }
 
 /* D-pad alignment */
 .ds4 .face.up {
-    transform: translate(0px, 0px) !important;
+    transform: translate(20px, 0px) !important;
 }
 
 .ds4 .face.down {
-    transform: translate(0px, 0px) !important;
+    transform: translate(20px, 20px) !important;
 }
 
 .ds4 .face.left {
-    transform: translate(0px, 0px) !important;
+    transform: translate(20px, -40px) !important;
 }
 
 .ds4 .face.right {
-    transform: translate(0px, 0px) !important;
+    transform: translate(60px, -40px) !important;
 }
 /* TikTok Studio performance-safe settings */
 * {
