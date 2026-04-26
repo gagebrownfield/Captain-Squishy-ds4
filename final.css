@@ -84,7 +84,7 @@
 
 /* circle = right */
 .ds4 .button.b {
-    transform: translate(-66px, -3px) !important;
+    transform: translate(-65px, -3px) !important;
 }
 
 /* D-pad reaction */
@@ -154,19 +154,19 @@
 
 /* D-pad alignment */
 .ds4 .face.up {
-    transform: translate(20px, 0px) !important;
+    transform: translate(60px, 0px) !important;
 }
 
 .ds4 .face.down {
-    transform: translate(20px, 20px) !important;
+    transform: translate(60px, 60px) !important;
 }
 
 .ds4 .face.left {
-    transform: translate(20px, -40px) !important;
+    transform: translate(40px, -70px) !important;
 }
 
 .ds4 .face.right {
-    transform: translate(60px, -40px) !important;
+    transform: translate(120px, -100px) !important;
 }
 /* TikTok Studio performance-safe settings */
 * {
