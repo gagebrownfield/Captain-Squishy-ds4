@@ -42,11 +42,11 @@
 
 /* Stick alignment */
 .ds4 .stick.left {
-    transform: translate(37px, -8px) !important;
+    transform: translate(27px, -10px) !important;
 }
 
 .ds4 .stick.right {
-    transform: translate(-2px, -5px) !important;
+    transform: translate(-12px, -10px) !important;
 }
 
 /* Face button reaction */
@@ -69,22 +69,22 @@
 /* Individual face button alignment */
 /* triangle = top */
 .ds4 .button.y {
-    transform: translate(-44px, 13px) !important;
+    transform: translate(-40px, 11px) !important;
 }
 
 /* square = left */
 .ds4 .button.x {
-    transform: translate(-31px, 0px) !important;
+    transform: translate(-27px, -2px) !important;
 }
 
 /* X = bottom */
 .ds4 .button.a {
-    transform: translate(-44px, -30px) !important;
+    transform: translate(-41px, -31px) !important;
 }
 
 /* circle = right */
 .ds4 .button.b {
-    transform: translate(-75px, 0px) !important;
+    transform: translate(-70px, -2px) !important;
 }
 
 /* D-pad reaction */
@@ -117,9 +117,9 @@
     left: 50% !important;
     transform: translateX(-50%) !important;
     top: 100% !important;
-    border-left: 8px solid transparent !important;
-    border-right: 8px solid transparent !important;
-    border-top: 36px solid rgba(255, 255, 255, 0.92) !important;
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-top: 15px solid rgba(255, 255, 255, 0.92) !important;
 }
 
 /* down = rectangle with triangle facing UP */
