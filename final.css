@@ -154,19 +154,19 @@
 
 /* D-pad alignment */
 .ds4 .face.up {
-    transform: translate(60px, 0px) !important;
+    transform: translate(50px, 0px) !important;
 }
 
 .ds4 .face.down {
-    transform: translate(60px, 60px) !important;
+    transform: translate(50px, 50px) !important;
 }
 
 .ds4 .face.left {
-    transform: translate(40px, -70px) !important;
+    transform: translate(45px, -72px) !important;
 }
 
 .ds4 .face.right {
-    transform: translate(120px, -100px) !important;
+    transform: translate(120px, -105px) !important;
 }
 /* TikTok Studio performance-safe settings */
 * {
